@@ -1,6 +1,6 @@
 # SprayGen
 
-Login Spray Generator. 
+![SprayGen](./img.png)
 
 This is a small script that I wrote in order to automate the annoying part of spray attacks. It creates common username permutations as a wordlist.
 
