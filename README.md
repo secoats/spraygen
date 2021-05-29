@@ -30,6 +30,39 @@ optional arguments:
 
 There are no library requirements. Use Python 3.x
 
+## Examples
+
+```bash
+# Basic example
+spraygen.py -i names.txt -o spraylist.txt
+spraygen.py -i names.txt
+```
+Omitting the output filename will print the created names in the terminal directly.
+
+You can also generate email-style usernames (e.g. `j.smith@domain.com`) using a supplied domain name:
+
+```bash
+# Create emails and regular usernames
+spraygen.py -i names.txt -d test.local -o spraylist.txt
+```
+
+If you only want email addresses and nothing else, then use the `-e` / `--emailonly` parameter:
+
+```bash
+# Create only emails
+spraygen.py -i names.txt -d test.local -o spraylist.txt -e
+```
+
+It is highly recommended to use the `-l` / `--lower` parameter in order to decrease the number of results. Email addresses are also usually lowercase anyway.
+
+```bash
+# only lowercase usernames
+spraygen.py -i names.txt -o spraylist.txt --lower
+
+# only lowercase emails
+spraygen.py -i names.txt -o spraylist.txt -d mydomain.com -el
+```
+
 ## Input
 
 Expected input file format:
@@ -91,37 +124,4 @@ Musterman
 Musterman-Max
 Musterman.Max
 MustermanMax
-```
-
-## Examples
-
-```bash
-# Basic example
-spraygen.py -i names.txt -o spraylist.txt
-spraygen.py -i names.txt
-```
-Omitting the output filename will print the created names in the terminal directly.
-
-You can also generate email-style usernames (e.g. `j.smith@domain.com`) using a supplied domain name:
-
-```bash
-# Create emails and regular usernames
-spraygen.py -i names.txt -d test.local -o spraylist.txt
-```
-
-If you only want email addresses and nothing else, then use the `-e` / `--emailonly` parameter:
-
-```bash
-# Create only emails
-spraygen.py -i names.txt -d test.local -o spraylist.txt -e
-```
-
-It is highly recommended to use the `-l` / `--lower` parameter in order to decrease the number of results. Email addresses are also usually lowercase anyway.
-
-```bash
-# only lowercase usernames
-spraygen.py -i names.txt -o spraylist.txt --lower
-
-# only lowercase emails
-spraygen.py -i names.txt -o spraylist.txt -d mydomain.com -el
 ```
