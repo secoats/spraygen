@@ -46,6 +46,53 @@ So either `"Firstname Lastname"` or just a single `"Username"` in each line.
 
 I did not really optimize this thing, so if you have a large number of input names, then you might want to use some better solution.
 
+For example, the output for the first user in that list would be:
+
+```default
+m-max
+m-musterman
+m.max
+m.musterman
+max
+max-musterman
+max.musterman
+maxmusterman
+mmax
+mmusterman
+musterman
+musterman-max
+musterman.max
+mustermanmax
+M-MAX
+M-MUSTERMAN
+M-Max
+M-Musterman
+M.MAX
+M.MUSTERMAN
+M.Max
+M.Musterman
+MAX
+MAX-MUSTERMAN
+MAX.MUSTERMAN
+MAXMUSTERMAN
+MMAX
+MMUSTERMAN
+MMax
+MMusterman
+MUSTERMAN
+MUSTERMAN-MAX
+MUSTERMAN.MAX
+MUSTERMANMAX
+Max
+Max-Musterman
+Max.Musterman
+MaxMusterman
+Musterman
+Musterman-Max
+Musterman.Max
+MustermanMax
+```
+
 ## Examples
 
 ```bash
